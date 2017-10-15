@@ -1,0 +1,253 @@
+html {
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 10%;
+}
+
+p {
+  font-size: 14px;
+  font-family: serif;
+  line-height: 20px;
+}
+
+#topBar {
+  margin-top: -30px;
+}
+
+h3 {
+  font-weight: 100;
+  margin-left: 10%;
+  font-size: 16px;
+  display:inline-block;
+}
+
+#info {
+  display:inline-block;
+  float: right;
+  margin-right: 10%;
+}
+
+h4 {
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h4:hover {
+  text-decoration: line-through;
+}
+
+img {
+  height: 100%;
+  margin: auto;
+  align-self: center;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.email {
+  font-family: helvetica;
+  font-weight: 500;
+  color: blue;
+}
+
+.pictureContainer {
+  width:70vw;
+  height:70vh;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  width:70vw;
+  height:70vh;
+}
+
+.half {
+  height: 100%;
+  width:50%;
+  display: inline-block;
+}
+
+.half:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#resumePage {
+  width:35vw;
+  align-self: center;
+  margin-top: 10%;
+}
+
+#resumeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid gray;
+}
+
+.arrow-left:hover {
+  border-right: 10px solid black;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid gray;
+}
+
+.arrow-right:hover {
+  border-left: 10px solid black;
+}
+
+.arrow-container {
+  margin:auto;
+  padding:10px;
+  cursor: pointer;
+}
+
+.limiter {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+#image {
+  max-width: 100%;
+  height:auto;
+  max-height: 70vh;
+}
+
+#attribution {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  float: right;
+  font-size: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#mobileContainer {
+  display: none !important;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 767px) {
+
+  h1 {
+    margin-left: 0%;
+    align-self: center;
+  }
+
+  h3 {
+    margin-left: 0%;
+    display:inline-block;
+    align-self: center;
+  }
+
+  img {
+    width: 100%;
+    margin: auto;
+    align-self: center;
+  }
+
+  #container {
+    display:none !important;
+  }
+
+  #mobileContainer {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #pictureContainer {
+    width:90vw;
+    height:100%;
+    flex: 1;
+  }
+
+  #topBar {
+    margin-left: 0px;
+  }
+
+  #info {
+    display: flex !important;
+    justify-content: center;
+    width:100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .limiter {
+    width: 100%;
+  }
+
+  #attribution {
+    margin-top: 10px;
+    margin-right: 0%;
+    position: relative;
+  }
+
+  #resumePage {
+    width:70vw;
+    align-self: center;
+    margin-top: 10%;
+  }
+}

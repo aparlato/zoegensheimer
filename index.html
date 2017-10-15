@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Zoe Gensheimer is a photgrapher.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Parlato</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Lato|Varela+Round" rel="stylesheet">
+  </head>
+  <body>
+    <div class="limiter">
+    <h1>Zoe Gensheimer</h1>
+    <div id="topBar">
+      <h3>photographer</h3>
+      <div id="info">
+        <h4 id="work">work</h4>
+        <a href='./about.html'><h4 id="resume">about</h4></a>
+      </div>
+    </div>
+
+    <div id="container" class='noSelect'>
+
+      <div class="pictureContainer" class='noSelect'>
+
+        <img id="image" class='noSelect' src="./data/01.jpg"/>
+
+        <div class="overlay"><div class='half' id="back"></div><div id="forward" class='half'></div></div>
+
+      </div>
+
+    </div>
+
+    <div id="mobileContainer">
+      <div id="pictureContainer"><img id="image" src="./data/01.jpg"/></div>
+      <div id="pictureContainer"><img id="image" src="./data/02.jpg"/></div>
+      <div id="pictureContainer"><img id="image" src="./data/03.jpg"/></div>
+      <div id="pictureContainer"><img id="image" src="./data/04.jpg"/></div>
+      <div id="pictureContainer"><img id="image" src="./data/05.jpg"/></div>
+      <div id="pictureContainer"><img id="image" src="./data/06.jpg"/></div>
+    </div>
+
+    <div id="attribution">All images © Zoe Gensheimer</div>
+
+  </div>
+    <script type="text/javascript">
+      var image = document.getElementById('image');
+      var imageNumber = 1;
+
+      document.getElementById('back').onclick = function() {
+        imageNumber > 1 ? imageNumber -= 1 : imageNumber = 6;
+        image.src = `./data/0${imageNumber.toString()}.jpg`
+      };
+      document.getElementById('forward').onclick = function() {
+        imageNumber < 6 ? imageNumber += 1 : imageNumber = 1;
+        image.src = `./data/0${imageNumber.toString()}.jpg`
+      };
+    </script>
+  </body>
+
+</html>
