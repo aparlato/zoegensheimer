@@ -246,6 +246,11 @@ img {
     position: relative;
   }
 
+  #image {
+    height: 100%;
+    max-height: 100%;
+  }
+
   #resumePage {
     width:70vw;
     align-self: center;
